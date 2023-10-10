@@ -90,7 +90,7 @@ function App() {
                     <dd>{userAgentData.mobile == 'unknown' ? 'unknown' : userAgentData.mobile ? 'Yes' : 'No'}</dd>
 
                     <dt>Browser</dt>
-                    <dd>{`${userAgentData.brands[0].brand} ${userAgentData.brands[0].version}`}</dd>
+                    <dd>{userAgentData.brands[0].brand === 'unknown' ? 'unknown' : `${userAgentData.brands[0].brand} ${userAgentData.brands[0].version}`}</dd>
 
                     <dt>Max Touch Points</dt>
                     <dd>{maxTouchPoints}</dd>
