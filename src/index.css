@@ -5,11 +5,9 @@ body{
   padding-inline: 1rem;
   width: 100%;
   box-sizing: border-box;
-}
-
-dl{
   text-align: center;
 }
+
 dt{
   font-weight: bold;
 }
