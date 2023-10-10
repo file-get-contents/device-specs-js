@@ -90,7 +90,7 @@ function App() {
             <dd>{maxTouchPoints}</dd>
 
             <dt>ONLINE</dt>
-            <dd>{onLine == 'unknown' ? 'unknown' : onLine ? 'ONLINE' : 'OFFLINE'}</dd>
+            <dd>{onLine == 'unknown' ? 'unknown' : onLine ? 'Yes' : 'No'}</dd>
 
             <dt>Network (Mbps)</dt>
             <dd>{connection.downlink}</dd>
