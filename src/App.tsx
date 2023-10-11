@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 type navigatorType = Navigator & {
@@ -20,7 +21,6 @@ type navigatorType = Navigator & {
         platform :string,
     },
 }
-
 
 function App() {
     const {
@@ -59,7 +59,7 @@ function App() {
                 s(() => [usage.toString(), quota.toString()])
             }
         )()
-    }, [])
+    }, [storage])
 
 
 
@@ -113,6 +113,7 @@ function App() {
 
     )
 }
+
 
 export default App
 
