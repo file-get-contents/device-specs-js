@@ -61,10 +61,15 @@ function App() {
         )()
     }, [storage])
 
+    const click :React.MouseEventHandler<HTMLAnchorElement> = React.useCallback(async(click) => {
+        click.preventDefault()
+        window.print()
+    }, [])
 
 
     return (
         <article>
+            <div><a href="" onClick={click}>print test</a></div>
             <header>
                 <h1>Navigator's Infomation</h1>
                 <p>The information contained in the navigator is displayed.</p>
